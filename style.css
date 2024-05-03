@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 20px;
+    background-color: hsl(0, 0%, 81%);
+    font-family: 'Barlow Semi Condensed';
+}
+.main-container{
+    margin: 0 auto;
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    height: 535px;
+    width: 1050px;
+}
+
+.testimonial{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#sc-1{
+    flex-basis: 73%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+#tm-1,#tm-4{
+    flex-basis: 68%;
+}
+#tm-2,#tm-3{
+    flex-basis: 29%;
+}
+
+#tm-5{
+    height: 100%;
+    flex-basis: 22%;
+}
+
+#tm-1{
+    background-color: hsl(263, 55%, 52%);
+    position: relative;
+    z-index: 0;
+}
+
+#tm-2{
+    background-color: hsl(217, 19%, 35%);
+}
+
+#tm-4{
+    background-color: hsl(219, 29%, 14%);
+}
+
+#tm-1>h3, #tm-1 .name, #tm-2>h3, #tm-2 .name, #tm-4>h3, #tm-4 .name{
+    color: white;
+}
+
+#tm-3, #tm-5{
+    color: hsl(217, 19%, 35%);
+}
+
+
+#tm-1 .photo, #tm-2 .photo, #tm-4 .photo{
+    border: 3px rgba(255, 255, 255, 0.5) solid;
+}
+
+#tm-1>p, #tm-2>p, #tm-4>p{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#tm-1 .tag, #tm-2 .tag, #tm-4 .tag{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+p{
+    font-size: 13px;
+}
+
+.profile-photo{
+    border-radius: 50%;
+    width: 40px;
+}
+
+.intro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+h3{
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 3;
+}
+
+.name-tag{
+    margin-left: 15px;
+    z-index: 3;
+}
+
+.name{
+    font-weight: 500;
+}
+
+.tag{
+    font-size: 13px;
+}
+
+.photo{
+    border-radius: 50%;
+    display: flex;
+    z-index: 3;
+}
+
+.quotation{
+    position: absolute;
+    top: 0px;
+    right: 15%;
+    size: 100%;
+    height: 70%;
+    z-index: 1;
+}
+
+@media (min-width:600px){
+    #tm-5{
+        margin: auto;
+    }
+}
+
+@media (max-width:600px) {
+    .main-container{
+        display:contents;
+        flex-direction: column;
+        width: 100%;
+    }
+    .top,.bottom{
+        
+        flex-direction: column;
+    }
+    
+    .testimonial{
+        width: 90%;
+        flex-direction: column;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+    }
+
+
+    
+    
+    
+}
